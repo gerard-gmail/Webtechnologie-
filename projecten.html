@@ -3,14 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
     />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -32,9 +30,7 @@
             alt="Ga naar de homepage"
           />
         </a>
-
         <div class="menu-toggle" id="menu-toggle">☰</div>
-
         <ul id="nav-links">
           <li><a href="/index.html">HOME</a></li>
           <li><a href="/portfolio.html">OVER MIJ</a></li>
@@ -46,139 +42,161 @@
       <section class="projecten">
         <h2>Mijn Projecten</h2>
         <div class="projecten-grid">
-          <div class="project-card">
-            <img src="/assets/img/Kannon.png" alt="Project 1 Placeholder" />
+          <div class="project-item" data-project="kanon">
+            <img src="/assets/img/Kannon.png" alt="KANON" />
             <h3>KANON</h3>
-            <p>
-              Voor mijn GIP-project in het 7de jaar heb ik een miniatuurkanon
-              ontworpen en gebouwd. Dit project combineert verschillende
-              metaalbewerkings­technieken zoals draaien, frezen, boren en
-              schroeven. Ik maakte gebruik van CNC-machines en programmeerde ze
-              met G-code via HSMWorks of rechtstreeks met N-code. Het ontwerp
-              werd volledig uitgetekend in SolidWorks, waarmee ik nauwkeurige
-              technische tekeningen en simulaties kon maken. De constructie
-              vereiste veel precisie en planning, en ik ben trots op het
-              eindresultaat!
-            </p>
-            <ul>
-              <li>CNC</li>
-              <li>Solid-Works</li>
-              <li>HSM-Works</li>
-            </ul>
-            <a
-              href="https://ap.cloud.panopto.eu/Panopto/Pages/Sessions/List.aspx?folderID=df737336-b443-41c3-a204-b2da000da69d"
-              >Bekijk Demo</a
-            >
           </div>
-
-          <div class="project-card">
-            <img src="/assets/img/slagboom.png" alt="Project 2 Placeholder" />
+          <div class="project-item" data-project="slagboom">
+            <img src="/assets/img/slagboom.png" alt="SLAGBOOM" />
             <h3>SLAGBOOM</h3>
-            <p>
-              Voor het vak Embedded Systemen ontwierp ik een automatische
-              slagboom met een Arduino Nano, servomotor, drukknoppen en LED’s.
-              Bij een open slagboom brandde een groen LED-licht. Zodra de
-              slagboom sloot, knipperden twee rode LED’s om de beurt. De
-              slagboom werd bediend via twee drukknoppen: één voor aankomst
-              (sluiten) en één voor vertrek (openen). De aansturing gebeurde met
-              interrupts, zodat het systeem snel en correct reageerde. Dit
-              project gaf mij een goed inzicht in het werken met
-              hardwarecomponenten en real-time softwaresturing.
-            </p>
-            <ul>
-              <li>C++</li>
-              <li>Arduino IDE</li>
-              <li>Oscilloscoop</li>
-            </ul>
-            <a
-              href="https://ap.cloud.panopto.eu/Panopto/Pages/Sessions/List.aspx?folderID=e3306309-0764-4c55-bffa-b2d90180ae3c"
-              >Bekijk Demo</a
-            >
-            <a href="https://wokwi.com/projects/425068228806459393">Wokwi</a>
           </div>
-
-          <div class="project-card">
-            <img src="/assets/img/Loxone.JPG" alt="Project 3 Placeholder" />
-            <h3>LOXONE: Automatische zonnewering</h3>
-            <p>
-              Voor dit project gebruikte ik het Loxone-systeem om een
-              automatische zonnewering te maken voor een zuidgericht schuifraam.
-              De zonnewering sluit bij felle zon, maar blijft open als iemand
-              via de schuifdeur naar buiten is gegaan. Elke keer als de
-              zonnewering opent, gaat er automatisch een gloeilamp aan via een
-              relais. Ik bracht de bekabeling in orde en gebruikte het programma
-              Loxone Config om de volledige logica te programmeren.
-            </p>
-            <ul>
-              <li>Loxone Config</li>
-              <li>Smart home</li>
-              <li>Elektrische installatie</li>
-            </ul>
-            <a href="#">Documentatie project</a>
-          </div>
-
-          <div class="project-card">
+          <div class="project-item" data-project="loxone">
             <img
-              src="/assets/img/project4-placeholder.jpg"
-              alt="Project 4 Placeholder"
+              src="/assets/img/Loxone.JPG"
+              alt="LOXONE: Automatische zonnewering"
+            />
+            <h3>LOXONE: Automatische zonnewering</h3>
+          </div>
+          <div class="project-item" data-project="project4">
+            <img
+              src="/assets/img/project4-placeholder-small.jpg"
+              alt="Project Titel 4"
             />
             <h3>Project Titel 4</h3>
-            <p>
-              Nog een interessant project waarbij ik [andere vaardigheid] heb
-              ingezet om een specifiek probleem op te lossen.
-            </p>
-            <ul>
-              <li>React</li>
-              <li>Frontend</li>
-            </ul>
-            <a href="#">Bekijk Code</a>
           </div>
-
-          <div class="project-card">
+          <div class="project-item" data-project="project5">
             <img
-              src="/assets/img/project5-placeholder.jpg"
-              alt="Project 5 Placeholder"
+              src="/assets/img/project5-placeholder-small.jpg"
+              alt="Project Titel 5"
             />
             <h3>Project Titel 5</h3>
-            <p>
-              Dit project was gericht op [het doel van het project] en ik heb
-              daarbij geleerd over [belangrijke leerpunten].
-            </p>
-            <ul>
-              <li>Node.js</li>
-              <li>Backend</li>
-            </ul>
-            <a href="#">Live Voorbeeld</a>
           </div>
-
-          <div class="project-card">
+          <div class="project-item" data-project="project6">
             <img
-              src="/assets/img/project6-placeholder.jpg"
-              alt="Project 6 Placeholder"
+              src="/assets/img/project6-placeholder-small.jpg"
+              alt="Project Titel 6"
             />
             <h3>Project Titel 6</h3>
-            <p>
-              Mijn laatste project in deze selectie, waarin ik [een unieke
-              aanpak/technologie] heb gebruikt.
-            </p>
-            <ul>
-              <li>HTML5 Canvas</li>
-              <li>Animatie</li>
-            </ul>
-            <a href="#">Project Details</a>
           </div>
         </div>
       </section>
 
-      <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+      <div id="projectModal" class="modal">
+        <span class="close-button">&times;</span>
+        <div class="modal-content">
+          <img
+            id="modal-image"
+            src=""
+            alt="Welkom! Bekijk mijn projecten door op de afbeeldingen te klikken."
+          />
+          <div id="modal-text">
+            <h3 id="modal-title"></h3>
+            <p id="modal-description"></p>
+            <ul id="modal-tools"></ul>
+            <div id="modal-links"></div>
+          </div>
+        </div>
+      </div>
 
       <script>
-        const menuToggle = document.getElementById("menu-toggle");
-        const navLinks = document.getElementById("nav-links");
+        const projectItems = document.querySelectorAll(".project-item");
+        const modal = document.getElementById("projectModal");
+        const modalImage = document.getElementById("modal-image");
+        const modalTitle = document.getElementById("modal-title");
+        const modalDescription = document.getElementById("modal-description");
+        const modalTools = document.getElementById("modal-tools");
+        const modalLinks = document.getElementById("modal-links");
+        const closeButton = document.querySelector(".close-button");
 
-        menuToggle.addEventListener("click", () => {
-          navLinks.classList.toggle("active");
+        const projectData = {
+          kanon: {
+            title: "KANON",
+            imageLarge: "/assets/img/Kannon.png",
+            description:
+              "Voor mijn GIP-project in het 7de jaar heb ik een miniatuurkanon ontworpen en gebouwd. Dit project combineert verschillende metaalbewerkings­technieken zoals draaien, frezen, boren en schroeven. Ik maakte gebruik van CNC-machines en programmeerde ze met G-code via HSMWorks of rechtstreeks met N-code. Het ontwerp werd volledig uitgetekend in SolidWorks, waarmee ik nauwkeurige technische tekeningen en simulaties kon maken. De constructie vereiste veel precisie en planning, en ik ben trots op het eindresultaat!",
+            tools: ["CNC", "Solid-Works", "HSM-Works"],
+            links: `<a href="https://ap.cloud.panopto.eu/Panopto/Pages/Sessions/List.aspx?folderID=df737336-b443-41c3-a204-b2da000da69d">Bekijk Demo</a>`,
+          },
+          slagboom: {
+            title: "SLAGBOOM",
+            imageLarge: "/assets/img/slagboom.png",
+            description:
+              "Voor het vak Embedded Systemen ontwierp ik een automatische slagboom met een Arduino Nano, servomotor, drukknoppen en LED’s. Bij een open slagboom brandde een groen LED-licht. Zodra de slagboom sloot, knipperden twee rode LED’s om de beurt. De slagboom werd bediend via twee drukknoppen: één voor aankomst (sluiten) en één voor vertrek (openen). De aansturing gebeurde met interrupts, zodat het systeem snel en correct reageerde. Dit project gaf mij een goed inzicht in het werken met hardwarecomponenten en real-time softwaresturing.",
+            tools: ["C++", "Arduino IDE", "Oscilloscoop"],
+            links: `<a href="https://ap.cloud.panopto.eu/Panopto/Pages/Sessions/List.aspx?folderID=e3306309-0764-4c55-bffa-b2d90180ae3c">Bekijk Demo</a> <a href="https://wokwi.com/projects/425068228806459393">Wokwi</a>`,
+          },
+          loxone: {
+            title: "LOXONE: Automatische zonnewering",
+            imageLarge: "/assets/img/Loxone.JPG",
+            description:
+              "Voor dit project gebruikte ik het Loxone-systeem om een automatische zonnewering te maken voor een zuidgericht schuifraam. De zonnewering sluit bij felle zon, maar blijft open als iemand via de schuifdeur naar buiten is gegaan. Elke keer als de zonnewering opent, gaat er automatisch een gloeilamp aan via een relais. Ik bracht de bekabeling in orde en gebruikte het programma Loxone Config om de volledige logica te programmeren.",
+            tools: ["Loxone Config", "Smart home", "Elektrische installatie"],
+            links: `<a href="#">Documentatie project</a>`,
+          },
+          project4: {
+            title: "Project Titel 4",
+            imageLarge: "/assets/img/project4-large.jpg",
+            description:
+              "Nog een interessant project waarbij ik [andere vaardigheid] heb ingezet om een specifiek probleem op te lossen.",
+            tools: ["React", "Frontend"],
+            links: `<a href="#">Bekijk Code</a>`,
+          },
+          project5: {
+            title: "Project Titel 5",
+            imageLarge: "/assets/img/project5-large.jpg",
+            description:
+              "Dit project was gericht op [het doel van het project] en ik heb daarbij geleerd over [belangrijke leerpunten].",
+            tools: ["Node.js", "Backend"],
+            links: `<a href="#">Live Voorbeeld</a>`,
+          },
+          project6: {
+            title: "Project Titel 6",
+            imageLarge: "/assets/img/project6-large.jpg",
+            description:
+              "Mijn laatste project in deze selectie, waarin ik [een unieke aanpak/technologie] heb gebruikt.",
+            tools: ["HTML5 Canvas", "Animatie"],
+            links: `<a href="#">Project Details</a>`,
+          },
+        };
+
+        projectItems.forEach((item) => {
+          item.addEventListener("click", () => {
+            const projectId = item.dataset.project;
+            const data = projectData[projectId];
+
+            modalImage.src = data.imageLarge;
+            modalTitle.textContent = data.title;
+            modalDescription.textContent = data.description;
+
+            modalTools.innerHTML = "";
+            data.tools.forEach((tool) => {
+              const li = document.createElement("li");
+              li.textContent = tool;
+              modalTools.appendChild(li);
+            });
+
+            modalLinks.innerHTML = data.links;
+            modal.style.display = "flex";
+          });
         });
+
+        closeButton.addEventListener("click", () => {
+          modal.style.display = "none";
+        });
+
+        window.addEventListener("click", (event) => {
+          if (event.target === modal) {
+            modal.style.display = "none";
+          }
+        });
+        const menuToggle = document.getElementById('menu-toggle');
+const navLinks = document.getElementById('nav-links');
+
+if (menuToggle && navLinks) {
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+}
       </script>
     </div>
   </body>
