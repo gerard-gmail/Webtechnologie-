@@ -1,4 +1,5 @@
-*{
+/* Algemene stijlen */
+* {
     margin: 0;
     padding: 0;
 
@@ -9,7 +10,8 @@
     background: url(/assets/img/background.jpg);
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    background-attachment: fixed;
+    min-height: 100vh;
     position: relative;
     font-family: sans-serif;
 }
@@ -32,6 +34,12 @@
 
 ul{
     margin-top: -4;
+}
+
+body {
+    /* ... andere body stijlen ... */
+    background-attachment: fixed;
+    min-height: 100%;
 }
 
 ul li{
@@ -139,9 +147,9 @@ ul li a:hover{
     color: darkslategray;
 }
 
-/* Menu standaard zichtbaar op desktop */ 
+/* Menu standaard zichtbaar op desktop */
 
-/* hier heb ik chatgpt gebruikt omdat het mezelf niet lukte*/ 
+/* hier heb ik chatgpt gebruikt omdat het mezelf niet lukte*/
 #nav-links {
     display: flex;
     gap: 20px;
@@ -182,7 +190,7 @@ ul li a:hover{
       margin-top: 20px;
       margin-left: 20px; /* beetje naar rechts duwen */
     }
-  
+
     .icons ion-icon {
       margin: 10px 0;
       font-size: 35px; /* eventueel iets kleiner op mobiel */
@@ -286,20 +294,20 @@ ul li a:hover{
 }
 
 /* Responsive aanpassingen voor kleinere schermen (projecten) */
-@media (max-width: 768px) {
+@media (max-width: 100%) {
     .projecten-grid {
         flex-direction: column; /* Stapel de rechthoeken onder elkaar op kleinere schermen */
         align-items: center; /* Centreer de rechthoeken horizontaal */
     }
 
     .project-card {
-        width: 90%; /* Laat de rechthoeken meer breedte innemen op kleinere schermen */
+        width: 100%; /* Laat de rechthoeken meer breedte innemen op kleinere schermen */
         text-align: center;
     }
 }
 
 /* Media query voor schermen smaller dan of gelijk aan 768px (achtergrond fix) */
-@media (max-width: 768px) {
+@media (max-width: 100%) {
     .main {
         min-height: 350vh; /* Hogere min-hoogte voor kleinere schermen */
     }
@@ -445,3 +453,195 @@ ul li a:hover{
     border-style: solid;
     border-color: orange transparent transparent;
 }
+
+/* --- Nieuwe stijlen voor de projecten pagina (modal) --- */
+.projecten {
+    padding: 50px 5%;
+    text-align: center;
+  }
+  
+  .projecten h2 {
+    font-size: 2.8em;
+    color: black;
+    margin-bottom: 40px;
+  }
+  
+  .projecten-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Kleinere kaarten voor het overzicht */
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .project-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    text-align: center; /* Centreer de titel onder de foto */
+    padding-bottom: 15px; /* Ruimte voor de titel */
+  }
+  
+  .project-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .project-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .project-item h3 {
+    font-size: 1.2em;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding: 0 10px;
+  }
+  
+/* --- Stijlen voor de projecten pagina (modal) --- */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 8px;
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column; /* Standaard: tekst onder de foto */
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .modal-content {
+        flex-direction: row; /* Naast elkaar op grotere schermen */
+        align-items: flex-start;
+        gap: 20px;
+    }
+}
+
+.close-button {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#modal-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+    #modal-image {
+        max-width: 50%;
+        margin-bottom: 0;
+    }
+}
+
+#modal-text {
+    flex: 1;
+    text-align: left;
+}
+
+#modal-title {
+    font-size: 2em;
+    color: black;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    #modal-title {
+        text-align: left;
+    }
+}
+
+#modal-description {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 0.95em;
+}
+
+#modal-tools {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    #modal-tools {
+        justify-content: flex-start;
+    }
+}
+
+#modal-tools li {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8em;
+}
+
+#modal-links a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: orange;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    margin-right: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#modal-links a:hover {
+    background-color: #e08e00;
+}
+
+#projectModal {
+    display: none;
+    /* ... andere stijlen ... */
+  }
