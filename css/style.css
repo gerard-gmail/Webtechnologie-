@@ -223,6 +223,7 @@ ul li a:hover{
     align-items: center; /* Centreert de kaarten verticaal (in het geval van ongelijke hoogte) */
     gap: 20px; /* Ruimte tussen de kaarten */
     padding: 20px; /* Wat padding rondom de grid */
+    align-items: stretch;
 }
 
 .project-card {
@@ -454,6 +455,7 @@ ul li a:hover{
     border-color: orange transparent transparent;
 }
 
+/* --- Nieuwe stijlen voor de projecten pagina (modal) --- */
 .projecten {
     padding: 50px 5%;
     text-align: center;
