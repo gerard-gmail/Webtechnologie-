@@ -44,39 +44,51 @@
         <div class="projecten-grid">
           <div class="project-item" data-project="kanon">
             <img src="/assets/img/Kannon.png" alt="KANON" />
-            <h3>KANON</h3>
+            <div class="project-title-container">
+              <h3>KANON</h3>
+            </div>
           </div>
           <div class="project-item" data-project="slagboom">
             <img src="/assets/img/slagboom.png" alt="SLAGBOOM" />
-            <h3>SLAGBOOM</h3>
+            <div class="project-title-container">
+              <h3>SLAGBOOM</h3>
+            </div>
           </div>
           <div class="project-item" data-project="loxone">
             <img
               src="/assets/img/Loxone.JPG"
               alt="LOXONE: Automatische zonnewering"
             />
-            <h3>LOXONE: Automatische zonnewering</h3>
+            <div class="project-title-container">
+              <h3>LOXONE: Automatische zonnewering</h3>
+            </div>
           </div>
           <div class="project-item" data-project="project4">
             <img
-              src="/assets/img/project4-placeholder-small.jpg"
-              alt="Project Titel 4"
+              src="/assets/img/router on a stick.png"
+              alt="Router on a Stick: VLAN Configuratie"
             />
-            <h3>Project Titel 4</h3>
+            <div class="project-title-container">
+              <h3>Router on a Stick: VLAN Configuratie</h3>
+            </div>
           </div>
           <div class="project-item" data-project="project5">
             <img
               src="/assets/img/project5-placeholder-small.jpg"
               alt="Project Titel 5"
             />
-            <h3>Project Titel 5</h3>
+            <div class="project-title-container">
+              <h3>APGIoTBoard</h3>
+            </div>
           </div>
           <div class="project-item" data-project="project6">
             <img
               src="/assets/img/project6-placeholder-small.jpg"
               alt="Project Titel 6"
             />
-            <h3>Project Titel 6</h3>
+            <div class="project-title-container">
+              <h3>Project Titel 6</h3>
+            </div>
           </div>
         </div>
       </section>
@@ -113,7 +125,7 @@
             title: "KANON",
             imageLarge: "/assets/img/Kannon.png",
             description:
-              "Voor mijn GIP-project in het 7de jaar heb ik een miniatuurkanon ontworpen en gebouwd. Dit project combineert verschillende metaalbewerkings­technieken zoals draaien, frezen, boren en schroeven. Ik maakte gebruik van CNC-machines en programmeerde ze met G-code via HSMWorks of rechtstreeks met N-code. Het ontwerp werd volledig uitgetekend in SolidWorks, waarmee ik nauwkeurige technische tekeningen en simulaties kon maken. De constructie vereiste veel precisie en planning, en ik ben trots op het eindresultaat!",
+              "Voor mijn GIP-project tijdens mijn opleiding tot CNC-operator aan het Don Bosco Mariaberginstituut heb ik een miniatuurkanon ontworpen en gebouwd. Dit project combineerde verschillende metaalbewerkingstechnieken zoals draaien, frezen, boren en schroeven. Ik maakte gebruik van CNC-machines en programmeerde ze met G-code via HSMWorks of rechtstreeks met N-code. Het ontwerp werd volledig uitgetekend in SolidWorks, waarmee ik nauwkeurige technische tekeningen en simulaties kon maken. De constructie vereiste veel precisie en planning, en ik ben trots op het eindresultaat!",
             tools: ["CNC", "Solid-Works", "HSM-Works"],
             links: `<a href="https://ap.cloud.panopto.eu/Panopto/Pages/Sessions/List.aspx?folderID=df737336-b443-41c3-a204-b2da000da69d">Bekijk Demo</a>`,
           },
@@ -134,19 +146,19 @@
             links: `<a href="#">Documentatie project</a>`,
           },
           project4: {
-            title: "Project Titel 4",
-            imageLarge: "/assets/img/project4-large.jpg",
+            title: "Router on a Stick: VLAN Configuratie",
+            imageLarge: "/assets/img/router on a stick.png",
             description:
-              "Nog een interessant project waarbij ik [andere vaardigheid] heb ingezet om een specifiek probleem op te lossen.",
-            tools: ["React", "Frontend"],
-            links: `<a href="#">Bekijk Code</a>`,
+              "Voor het vak Routering & Switching configureerde ik een Router on a Stick opstelling met een MikroTik router en een Cisco switch. Het doel was om verschillende virtuele netwerken (VLAN's) te creëren en de communicatie hiertussen te regelen via één enkele routerinterface die als trunk fungeerde. Door het configureren van VLAN's (Management, Werknemers, IOT en Guest) op de switch en de bijbehorende sub-interfaces op de router, kon ik het netwerk logisch segmenteren. De router verzorgde de inter-VLAN routing en ik implementeerde specifieke firewallregels om de communicatie tussen deze segmenten te beperken, zoals het isoleren van het Guest netwerk en het beveiligen van het Management VLAN. Dit project demonstreerde de efficiënte inzet van een enkele routerinterface voor het afhandelen van verkeer tussen meerdere logische netwerken en gaf mij een dieper inzicht in VLAN-technologie en netwerksegmentatie.",
+            tools: ["MikroTik RouterOS", "Cisco IOS"],
+            links: `<a href="#">Documentatie project</a>`,
           },
           project5: {
-            title: "Project Titel 5",
+            title: "APGIoTBoard",
             imageLarge: "/assets/img/project5-large.jpg",
             description:
-              "Dit project was gericht op [het doel van het project] en ik heb daarbij geleerd over [belangrijke leerpunten].",
-            tools: ["Node.js", "Backend"],
+              "Voor dit project ontwikkelde ik een reeks interactieve demonstratieprogramma's voor het APGIoTBoard. Het doel was om de mogelijkheden van het bord en mijn programmeervaardigheden te tonen door middel van verschillende offline toegankelijke functies, geschreven in Python op een Raspberry Pi Pico. Via de drukknoppen, de draaiknop en de LED's kunnen gebruikers door een menu van minstens vijf verschillende programma's navigeren en deze selecteren. Elk programma demonstreert de functionaliteit van een of meerdere componenten van het APGIoTBoard: de LED's (inclusief een complex patroon), de drukknoppen, de draaiknop en de temperatuursensor. Eén van de programma's toont ook het bewaren en uitlezen van data uit een bestand, inclusief foutafhandeling. Dit project gaf me inzicht in het offline aansturen van hardwarecomponenten en het creëren van een gebruikersvriendelijke interface zonder directe computerverbinding, waarbij ik uitsluitend gebruik maakte van de hardware abstractie module (apgiotboard).",
+            tools: ["Python", "Raspberry Pico", "Thonny"],
             links: `<a href="#">Live Voorbeeld</a>`,
           },
           project6: {
@@ -189,14 +201,14 @@
             modal.style.display = "none";
           }
         });
-        const menuToggle = document.getElementById('menu-toggle');
-const navLinks = document.getElementById('nav-links');
+        const menuToggle = document.getElementById("menu-toggle");
+        const navLinks = document.getElementById("nav-links");
 
-if (menuToggle && navLinks) {
-  menuToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-  });
-}
+        if (menuToggle && navLinks) {
+          menuToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+          });
+        }
       </script>
     </div>
   </body>
