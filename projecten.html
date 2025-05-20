@@ -74,7 +74,7 @@
           </div>
           <div class="project-item" data-project="project5">
             <img
-              src="/assets/img/project5-placeholder-small.jpg"
+              src="/assets/img/apgiotboardscreen.png"
               alt="Project Titel 5"
             />
             <div class="project-title-container">
@@ -83,11 +83,11 @@
           </div>
           <div class="project-item" data-project="project6">
             <img
-              src="/assets/img/project6-placeholder-small.jpg"
-              alt="Project Titel 6"
+              src="/assets/img/autotje.png"
+              alt="Robotwagentje"
             />
             <div class="project-title-container">
-              <h3>Project Titel 6</h3>
+              <h3>Robotwagentje</h3>
             </div>
           </div>
         </div>
@@ -155,18 +155,18 @@
           },
           project5: {
             title: "APGIoTBoard",
-            imageLarge: "/assets/img/project5-large.jpg",
+            imageLarge: "/assets/img/apgiotboardscreen.png",
             description:
               "Voor dit project ontwikkelde ik een reeks interactieve demonstratieprogramma's voor het APGIoTBoard. Het doel was om de mogelijkheden van het bord en mijn programmeervaardigheden te tonen door middel van verschillende offline toegankelijke functies, geschreven in Python op een Raspberry Pi Pico. Via de drukknoppen, de draaiknop en de LED's kunnen gebruikers door een menu van minstens vijf verschillende programma's navigeren en deze selecteren. Elk programma demonstreert de functionaliteit van een of meerdere componenten van het APGIoTBoard: de LED's (inclusief een complex patroon), de drukknoppen, de draaiknop en de temperatuursensor. Eén van de programma's toont ook het bewaren en uitlezen van data uit een bestand, inclusief foutafhandeling. Dit project gaf me inzicht in het offline aansturen van hardwarecomponenten en het creëren van een gebruikersvriendelijke interface zonder directe computerverbinding, waarbij ik uitsluitend gebruik maakte van de hardware abstractie module (apgiotboard).",
             tools: ["Python", "Raspberry Pico", "Thonny"],
             links: `<a href="#">Live Voorbeeld</a>`,
           },
           project6: {
-            title: "Project Titel 6",
-            imageLarge: "/assets/img/project6-large.jpg",
+            title: "Robotwagentje",
+            imageLarge: "/assets/img/autotje.png",
             description:
-              "Mijn laatste project in deze selectie, waarin ik [een unieke aanpak/technologie] heb gebruikt.",
-            tools: ["HTML5 Canvas", "Animatie"],
+              "In dit project heb ik een autonoom robotwagentje gebouwd dat zelfstandig een zwartlijnparcours kan volgen. Het doel was om een voertuig te maken dat zijn eigen weg kan vinden op een vooraf bepaald pad. Dit project combineert hardware en software, zoals motorbesturing, sensoruitlezing en microcontrollerprogrammering.  Dit is het brein van het robotwagentje. Ik heb deze kleine, maar krachtige microcontroller gebruikt om de motoren aan te sturen en de informatie van de sensoren te verwerken. De Arduino Nano is geprogrammeerd met de Arduino IDE. Om de DC-motoren aan te sturen, heb ik de L9110 motor driver module gebruikt. Met deze module kan ik de snelheid en richting van de motoren regelen. Twee DC-motoren zorgen voor de aandrijving van het wagentje. Om de zwarte lijn te detecteren, heb ik TCRT5000 infraroodsensoren gebruikt. Deze sensoren meten de reflectie van infrarood licht en geven een spanningssignaal afhankelijk van de kleur van het oppervlak. Een 16x2 LCD-scherm, aangestuurd via I2C, toont real-time informatie.  Drukknoppen werden gebruikt om de motorfuncties handmatig te bedienen en te testen. Een potentiometer werd gebruikt om de snelheid van de motoren te regelen. Een breadboard werd gebruikt om de elektronische componenten met elkaar te verbinden en te testen. Jumper draden werden gebruikt om de verschillende componenten met elkaar te verbinden. ",
+            tools: ["Arduino Nano", "sensoren", "DC-motoren"],
             links: `<a href="#">Project Details</a>`,
           },
         };
