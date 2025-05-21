@@ -20,7 +20,6 @@
     <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/style.css" />
     <style>
-      /* Extra stijlen voor het mannetje en de tekstballon (kun je later in style.css plaatsen) */
       .contact-greeting {
         display: flex;
         flex-direction: column;
@@ -29,13 +28,13 @@
       }
 
       .greeting-image {
-        width: 100px; /* Pas de grootte naar wens aan */
+        width: 100px;
         height: auto;
         margin-bottom: 10px;
       }
 
       .speech-bubble {
-        background-color: #e0f7fa; /* Lichtblauw, pas naar wens aan */
+        background-color: #e0f7fa;
         color: #333;
         border-radius: 10px;
         padding: 10px 15px;
@@ -54,7 +53,12 @@
         border-color: #e0f7fa transparent transparent transparent;
       }
     </style>
-  </head>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    </head>
   <body>
     <div class="main">
       <div class="navbar">
@@ -69,6 +73,8 @@
           <li><a href="/contact.html">CONTACT</a></li>
         </ul>
       </div>
+
+      
 
       <section class="contact-greeting">
         <img
@@ -100,6 +106,11 @@
         </button>
       </section>
 
+      <section class="contact-map-section">
+        <h2>Waar je me kunt vinden</h2>
+        <div id="gerardMap"></div>
+      </section>
+
       <script>
         const menuToggle = document.getElementById("menu-toggle");
         const navLinks = document.getElementById("nav-links");
@@ -119,7 +130,6 @@
           window.location.href = mailtoUrl;
         }
 
-        // Array met random begroetingen
         const greetings = [
           "Hopelijk was alles duidelijk!",
           "Stel al je vragen hier.",
@@ -138,13 +148,49 @@
           const randomIndex = Math.floor(Math.random() * greetings.length);
           greetingTextElement.textContent = greetings[randomIndex];
         }
-
-        // Verander de begroeting elke paar seconden (bijvoorbeeld elke 3 seconden)
         setInterval(changeGreeting, 3000);
-
-        // Toon de eerste begroeting direct bij het laden van de pagina
         changeGreeting();
       </script>
+
+      <script
+        src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      ></script>
+
+      <script>
+        const gooreindLatLng = [51.354362, 4.538084,];
+
+        let map = L.map('gerardMap').setView(gooreindLatLng, 14);
+
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 20,
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        let circle = L.circle(gooreindLatLng, {
+            color: 'red',
+            fillColor: '#f03', 
+            fillOpacity: 0.5,
+            radius: 500
+        }).addTo(map);
+
+        circle.bindPopup('mijn werkgebied').openPopup();
+
+      </script>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentYearSpan = document.getElementById('current-year');
+            if (currentYearSpan) {
+                currentYearSpan.textContent = new Date().getFullYear();
+            }
+        });
+      </script>
+    </div> <footer class="site-footer">
+      <p>&copy; <span id="current-year"></span> Gerard. Alle rechten voorbehouden.</p>
+  </footer>
+
+</body>
+</html>
     </div>
+    
   </body>
 </html>
