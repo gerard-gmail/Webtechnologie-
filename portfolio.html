@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/style.css" />
     <style>
-      /* Extra stijlen voor de "Over Mij" sectie op de homepage */
+
       .about-me {
         padding: 40px 8%;
         color: black;
@@ -37,7 +37,7 @@
       }
 
       .about-me-image {
-        flex: 1 1 300px; /* Basisbreedte van 300px, groeit en krimpt flexibel */
+        flex: 1 1 300px; 
         max-width: 400px;
         border-radius: 8px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -48,10 +48,11 @@
         height: auto;
         border-radius: 8px;
         display: block;
+        position: sticky;
       }
 
       .about-me-text {
-        flex: 1 1 400px; /* Basisbreedte van 400px, groeit en krimpt flexibel */
+        flex: 1 1 400px; 
         line-height: 1.7;
       }
 
@@ -71,14 +72,13 @@
       }
 
       .about-me-text span {
-        color: orange; /* Accentkleur voor belangrijke woorden */
+        color: orange; 
         font-weight: bold;
       }
 
-      /* Responsive aanpassingen */
       @media (max-width: 768px) {
         .about-me-container {
-          flex-direction: column; /* Stapel de afbeelding en tekst onder elkaar op kleinere schermen */
+          flex-direction: column; 
           align-items: center;
         }
 
@@ -143,7 +143,7 @@
               probleemoplossend perspectief.
             </p>
 
-            <h3>De Menselijke Factor: Van Psychologie naar Technologie</h3>
+            <h3>Van Psychologie naar Technologie</h3>
             <p>
               Mijn pad is misschien onconventioneel, want voordat ik me in de
               wereld van sensoren en netwerken stortte, verkende ik de
@@ -178,6 +178,17 @@
           navLinks.classList.toggle("active");
         });
       </script>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentYearSpan = document.getElementById('current-year');
+            if (currentYearSpan) {
+                currentYearSpan.textContent = new Date().getFullYear();
+            }
+        });
+      </script>
+    </div> <footer class="site-footer">
+      <p>&copy; <span id="current-year"></span> Gerard. Alle rechten voorbehouden.</p>
+  </footer>
     </div>
   </body>
 </html>
