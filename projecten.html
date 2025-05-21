@@ -210,6 +210,17 @@
           });
         }
       </script>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentYearSpan = document.getElementById('current-year');
+            if (currentYearSpan) {
+                currentYearSpan.textContent = new Date().getFullYear();
+            }
+        });
+      </script>
+    </div> <footer class="site-footer">
+      <p>&copy; <span id="current-year"></span> Gerard. Alle rechten voorbehouden.</p>
+  </footer>
     </div>
   </body>
 </html>
