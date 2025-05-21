@@ -1,4 +1,3 @@
-/* Algemene stijlen */
 * {
     margin: 0;
     padding: 0;
@@ -15,6 +14,7 @@
     position: relative;
     font-family: sans-serif;
 }
+
 
 .navbar{
     width: 86%;
@@ -152,16 +152,12 @@ ul li a:hover{
     color: darkslategray;
 }
 
-/* Menu standaard zichtbaar op desktop */
-
-/* hier heb ik chatgpt gebruikt omdat het mezelf niet lukte*/
 #nav-links {
     display: flex;
     gap: 20px;
     align-items: center;
 }
 
-/* Responsive menu */
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;
@@ -191,17 +187,16 @@ ul li a:hover{
     .icons {
       display: flex;
       flex-direction: column;
-      align-items: flex-start; /* << links uitlijnen */
+      align-items: flex-start;
       margin-top: 20px;
-      margin-left: 20px; /* beetje naar rechts duwen */
+      margin-left: 20px;
     }
 
     .icons ion-icon {
       margin: 10px 0;
-      font-size: 35px; /* eventueel iets kleiner op mobiel */
+      font-size: 35px;
     }
   }
-/*tot hier*/
 
 @media (max-width: 768px) {
     .image {
@@ -209,7 +204,6 @@ ul li a:hover{
     }
 }
 
-/* Stijlen voor de projecten pagina (gecentreerde rechthoeken) */
 .projecten {
     padding: 40px 8%;
     text-align: center;
@@ -222,12 +216,12 @@ ul li a:hover{
 }
 
 .projecten-grid {
-    display: flex; /* Gebruik flexbox voor centrering */
-    flex-wrap: wrap; /* Zorgt ervoor dat de kaarten naar de volgende rij gaan als er niet genoeg ruimte is */
-    justify-content: center; /* Centreert de kaarten horizontaal */
-    align-items: center; /* Centreert de kaarten verticaal (in het geval van ongelijke hoogte) */
-    gap: 20px; /* Ruimte tussen de kaarten */
-    padding: 20px; /* Wat padding rondom de grid */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px; 
     align-items: stretch;
 }
 
@@ -235,11 +229,11 @@ ul li a:hover{
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 300px; /* Vaste breedte voor de rechthoeken */
+    width: 300px;
     padding: 20px;
     text-align: left;
     transition: transform 0.3s ease-in-out;
-    margin-bottom: 20px; /* Wat ruimte onder elke kaart */
+    margin-bottom: 20px; 
 }
 
 .project-card:hover {
@@ -299,27 +293,24 @@ ul li a:hover{
     background-color: #e08e00;
 }
 
-/* Responsive aanpassingen voor kleinere schermen (projecten) */
 @media (max-width: 100%) {
     .projecten-grid {
-        flex-direction: column; /* Stapel de rechthoeken onder elkaar op kleinere schermen */
-        align-items: center; /* Centreer de rechthoeken horizontaal */
+        flex-direction: column;
+        align-items: center; 
     }
 
     .project-card {
-        width: 100%; /* Laat de rechthoeken meer breedte innemen op kleinere schermen */
+        width: 100%; 
         text-align: center;
     }
 }
 
-/* Media query voor schermen smaller dan of gelijk aan 768px (achtergrond fix) */
-@media (max-width: 100%) {
+@media (max-width: 768px) {
     .main {
-        min-height: 350vh; /* Hogere min-hoogte voor kleinere schermen */
+        min-height: padding 30px 10%;
     }
 }
 
-/* Stijlen voor de contactpagina */
 .contact-page {
     padding: 40px 8%;
     text-align: center;
@@ -388,14 +379,14 @@ ul li a:hover{
     background-color: orange;
 }
 
-/* Responsive aanpassingen voor kleinere schermen (contact) */
 @media (max-width: 768px) {
     .contact-page {
-        padding: 30px 5%;
+        padding: 30px 10%; 
+
     }
 
     .contact-form {
-        padding: 15px;
+        padding: 15px; 
     }
 
     .form-group label {
@@ -414,53 +405,51 @@ ul li a:hover{
 
 
 .contact-form textarea:focus {
-    outline: none; /* Verwijdert de standaard focus outline (meestal blauw) */
-    border-color: orange; /* Stelt de kleur van de rand in op oranje */
-    box-shadow: 0 0 5px orange; /* Voegt eventueel een subtiele oranje schaduw toe */
+    outline: none; 
+    border-color: orange;
+    box-shadow: 0 0 5px orange; 
 }
 
 .contact-form input[type="text"]:focus {
-    outline: none; /* Verwijdert de standaard focus outline */
-    border-color: orange; /* Stelt de kleur van de rand in op oranje */
-    box-shadow: 0 0 5px orange; /* Voegt eventueel een subtiele oranje schaduw toe */
+    outline: none; 
+    border-color: orange; 
+    box-shadow: 0 0 5px orange;
 }
 
-/* Stijlen voor de contactpagina met robotje en tekst boven */
 .contact-greeting {
     display: flex;
-    flex-direction: column; /* Stapelt de afbeelding en tekst onder elkaar */
-    align-items: center; /* Centreert de afbeelding en tekst horizontaal */
+    flex-direction: column; 
+    align-items: center;
     margin-bottom: 20px;
 }
 
 .greeting-image {
-    width: 100px; /* Pas de grootte naar wens aan */
+    width: 100px; 
     height: auto;
-    margin-bottom: 20px; /* Ruimte tussen de robot en de tekstballon */
+    margin-bottom: 20px; 
 }
 
 .speech-bubble {
-    background-color:orange; /* Lichtblauw, pas naar wens aan */
+    background-color:orange;
     color: #333;
     border-radius: 10px;
     padding: 10px 15px;
     font-size: 0.9em;
     position: relative;
-    text-align: center; /* Centreert de tekst in de ballon */
+    text-align: center; 
 }
 
 .speech-bubble:after {
     content: '';
     position: absolute;
-    top: -10px; /* Positioneert het puntje boven de tekstballon */
+    top: -10px; 
     left: 50%;
-    transform: translateX(-50%) rotate(180deg); /* Draait het puntje om */
+    transform: translateX(-50%) rotate(180deg); 
     border-width: 10px 10px 0 10px;
     border-style: solid;
     border-color: orange transparent transparent;
 }
 
-/* --- Nieuwe stijlen voor de projecten pagina (modal) --- */
 .projecten {
     padding: 50px 5%;
     text-align: center;
@@ -474,7 +463,7 @@ ul li a:hover{
   
   .projecten-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Kleinere kaarten voor het overzicht */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
     gap: 20px;
     padding: 20px;
   }
@@ -488,10 +477,9 @@ ul li a:hover{
     transition: transform 0.3s ease-in-out;
     text-align: center;
     display: flex;
-    flex-direction: column; /* Houd de items gestapeld */
-    align-items: center; /* Centreer horizontaal */
-    /* justify-content: center; <--- Verwijder deze regel */
-    padding-bottom: 15px; /* Behoud wat padding aan de onderkant */
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
 }
   .project-item:hover {
     transform: translateY(-5px);
@@ -503,7 +491,7 @@ ul li a:hover{
     height: auto;
     display: block;
     border-radius: 8px 8px 0 0;
-    margin-bottom: 10px; /* Voeg weer wat marge onder de afbeelding toe */
+    margin-bottom: 10px;
 }
   
   .project-item h3 {
@@ -515,21 +503,19 @@ ul li a:hover{
 }
 
 .project-title-container {
-    flex-grow: 1; /* Laat de container de beschikbare ruimte innemen */
+    flex-grow: 1; 
     display: flex;
-    align-items: center; /* Centreer de titel verticaal binnen de container */
-    justify-content: center; /* Centreer de titel horizontaal binnen de container */
+    align-items: center; 
+    justify-content: center; 
 }
 
 .project-title-container h3 {
     font-size: 1.2em;
     color: black;
-    margin: 0; /* Verwijder standaard marges van de h3 */
+    margin: 0;
     padding: 0 10px;
 }
   
-
-/* --- Stijlen voor de projecten pagina (modal) --- */
 .modal {
     display: none;
     position: fixed;
@@ -556,13 +542,13 @@ ul li a:hover{
     max-height: 90%;
     overflow-y: auto;
     display: flex;
-    flex-direction: column; /* Standaard: tekst onder de foto */
+    flex-direction: column; 
     align-items: center;
 }
 
 @media (min-width: 768px) {
     .modal-content {
-        flex-direction: row; /* Naast elkaar op grotere schermen */
+        flex-direction: row; 
         align-items: flex-start;
         gap: 20px;
     }
@@ -668,5 +654,38 @@ ul li a:hover{
 
 #projectModal {
     display: none;
-    /* ... andere stijlen ... */
-  }
+}
+
+
+.contact-map-section {
+    text-align: center;
+    padding: 40px 8%;
+    margin-bottom: 50px;
+}
+
+#gerardMap {
+    width: 100%;
+    height: 400px;
+    max-width: 800px;
+    margin: 30px auto 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+    #gerardMap {
+        height: 300px;
+        margin: 20px auto 0 auto;
+    }
+}
+
+
+.site-footer {
+    background-color: orange;
+    color: black; 
+    text-align: center; 
+    padding: 20px; 
+    font-size: 0.9em; 
+    margin-top: 50px; 
+}
