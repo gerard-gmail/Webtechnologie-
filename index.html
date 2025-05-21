@@ -57,9 +57,7 @@
         </a>
       </div>
 
-      <div class="image">
-        <img src="/assets/img/fotogeenachtergrond.png" class="gerard" />
-      </div>
+
 
       <div class="icons">
         <a href="https://www.facebook.com/gerard.bareyan.1"
@@ -84,5 +82,16 @@
         navLinks.classList.toggle("active");
       });
     </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          const currentYearSpan = document.getElementById('current-year');
+          if (currentYearSpan) {
+              currentYearSpan.textContent = new Date().getFullYear();
+          }
+      });
+    </script>
+  </div> <footer class="site-footer">
+    <p>&copy; <span id="current-year"></span> Gerard. Alle rechten voorbehouden.</p>
+</footer>
   </body>
 </html>
