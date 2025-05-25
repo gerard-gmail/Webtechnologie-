@@ -1,10 +1,9 @@
 * {
     margin: 0;
     padding: 0;
-
 }
 
-.main{
+.main {
     width: 100%;
     background: url(/assets/img/background.jpg);
     background-position: center;
@@ -16,7 +15,7 @@
 }
 
 
-.navbar{
+.navbar {
     width: 86%;
     display: flex;
     margin: auto;
@@ -25,14 +24,14 @@
     justify-content: space-between;
 }
 
-.navbar .logo{
+.navbar .logo {
     width: 160px;
     cursor: pointer;
     margin-top: 1%;
     margin-left: -2%;
 }
 
-ul{
+ul {
     margin-top: -4;
 }
 
@@ -47,13 +46,13 @@ body {
     font-family: sans-serif; 
 }
 
-ul li{
+ul li {
     list-style: none;
     display: inline-block;
     padding: 10px 16px;
 }
 
-ul li a{
+ul li a {
     font-size: 16px;
     font-weight: bold;
     text-decoration: none;
@@ -62,35 +61,35 @@ ul li a{
     transition: .4s ease;
 }
 
-ul li a:hover{
+ul li a:hover {
     color: orange;
 }
 
-.info{
+.info {
     margin-left: 7%;
     margin-top: 6%;
 }
 
-.info h1{
+.info h1 {
     font-size: 65px;
     color: black;
 }
 
-.info h3{
+.info h3 {
     font-size: 18px;
     letter-spacing: 1px;
     line-height: 24px;
 }
 
-.info span{
+.info span {
     color: orange;
 }
 
-.info a span{
+.info a span {
     color: aliceblue;
 }
 
-.info a{
+.info a {
     text-decoration: none;
     color: aliceblue;
     background: black;
@@ -101,11 +100,11 @@ ul li a:hover{
     transition: .4s ease;
 }
 
-.info a:hover{
+.info a:hover {
     background: orange;
 }
 
-.image{
+.image {
     width: 30%;
     height: 60%;
     position: absolute;
@@ -113,7 +112,7 @@ ul li a:hover{
     bottom: 0;
 }
 
-.image img{
+.image img {
     position: absolute;
     height: 90%;
     left: 40%;
@@ -122,17 +121,12 @@ ul li a:hover{
     transition: left 2s ease;
 }
 
-.image:hover .gerard{
-    left: 76%;
-
-}
-
-.icons a{
+.icons a {
     text-decoration: none;
     color: black;
 }
 
-.icons ion-icon{
+.icons ion-icon {
     margin-left: 7%;
     color: black;
     margin-right: -60px;
@@ -140,10 +134,9 @@ ul li a:hover{
     transition: .4s ease;
 }
 
-.icons ion-icon:hover{
+.icons ion-icon:hover {
     color: orange;
 }
-
 
 .menu-toggle {
     display: none;
@@ -158,49 +151,43 @@ ul li a:hover{
     align-items: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px){
     .menu-toggle {
         display: block;
-    }
+}
 
-    #nav-links {
-        display: none; /* <--- belangrijk! standaard verbergen op mobiel */
-        flex-direction: column;
-        width: 100%;
-        background-color: white;
-        margin-top: 10px;
-        padding: 10px 0;
-        border-top: 1px solid #ccc;
-    }
+#nav-links {
+    display: none; /* <--- belangrijk! standaard verbergen op mobiel */
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    margin-top: 10px;
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+}
 
-    #nav-links.active {
-        display: flex; /* <--- pas tonen als op menu geklikt is */
-    }
+#nav-links.active {
+    display: flex; /* <--- pas tonen als op menu geklikt is */
+}
 
-    #nav-links li {
-        text-align: center;
-        padding: 10px 0;
+#nav-links li {
+    text-align: center;
+    padding: 10px 0;
     }
 }
 
 @media (max-width: 768px) {
-    .icons {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      margin-top: 20px;
-      margin-left: 20px;
-    }
+.icons{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-left: 20px;
+}
 
-    .icons ion-icon {
-      margin: 10px 0;
-      font-size: 35px;
-    }
-  }
-
-@media (max-width: 768px) {
-    .image {
-      display: none;
+.icons ion-icon {
+    margin: 10px 0;
+    font-size: 35px;
     }
 }
 
@@ -294,20 +281,20 @@ ul li a:hover{
 }
 
 @media (max-width: 100%) {
-    .projecten-grid {
-        flex-direction: column;
-        align-items: center; 
+.projecten-grid {
+    flex-direction: column;
+    align-items: center; 
     }
 
-    .project-card {
-        width: 100%; 
-        text-align: center;
+.project-card {
+    width: 100%; 
+    text-align: center;
     }
 }
 
 @media (max-width: 768px) {
-    .main {
-        min-height: padding 30px 10%;
+.main {
+    min-height: padding 30px 10%;
     }
 }
 
@@ -380,29 +367,27 @@ ul li a:hover{
 }
 
 @media (max-width: 768px) {
-    .contact-page {
-        padding: 30px 10%; 
-
-    }
-
-    .contact-form {
-        padding: 15px; 
-    }
-
-    .form-group label {
-        font-size: 1em;
-    }
-
-    .form-group input[type="text"],
-    .form-group textarea {
-        font-size: 1em;
-    }
-
-    .send-button {
-        font-size: 1em;
-    }
+.contact-page {
+    padding: 30px 10%; 
 }
 
+.contact-form {
+    padding: 15px; 
+}
+
+.form-group label {
+    font-size: 1em;
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+    font-size: 1em;
+}
+
+.send-button {
+    font-size: 1em;
+    }
+}
 
 .contact-form textarea:focus {
     outline: none; 
@@ -455,20 +440,20 @@ ul li a:hover{
     text-align: center;
   }
   
-  .projecten h2 {
+.projecten h2 {
     font-size: 2.8em;
     color: black;
     margin-bottom: 40px;
   }
   
-  .projecten-grid {
+.projecten-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
     gap: 20px;
     padding: 20px;
   }
   
-  .project-item {
+.project-item {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -481,12 +466,12 @@ ul li a:hover{
     align-items: center;
     padding-bottom: 15px;
 }
-  .project-item:hover {
+.project-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-  }
+}
   
-  .project-item img {
+.project-item img {
     width: 100%;
     height: auto;
     display: block;
@@ -494,7 +479,7 @@ ul li a:hover{
     margin-bottom: 10px;
 }
   
-  .project-item h3 {
+.project-item h3 {
     font-size: 1.2em;
     color: black;
     margin-top: 10px;
@@ -547,10 +532,10 @@ ul li a:hover{
 }
 
 @media (min-width: 768px) {
-    .modal-content {
-        flex-direction: row; 
-        align-items: flex-start;
-        gap: 20px;
+.modal-content {
+    flex-direction: row; 
+    align-items: flex-start;
+    gap: 20px;
     }
 }
 
@@ -580,9 +565,9 @@ ul li a:hover{
 }
 
 @media (min-width: 768px) {
-    #modal-image {
-        max-width: 50%;
-        margin-bottom: 0;
+#modal-image {
+    max-width: 50%;
+    margin-bottom: 0;
     }
 }
 
@@ -600,8 +585,8 @@ ul li a:hover{
 }
 
 @media (min-width: 768px) {
-    #modal-title {
-        text-align: left;
+#modal-title {
+    text-align: left;
     }
 }
 
@@ -623,8 +608,8 @@ ul li a:hover{
 }
 
 @media (min-width: 768px) {
-    #modal-tools {
-        justify-content: flex-start;
+#modal-tools {
+    justify-content: flex-start;
     }
 }
 
@@ -675,8 +660,8 @@ ul li a:hover{
 
 @media (max-width: 768px) {
     #gerardMap {
-        height: 300px;
-        margin: 20px auto 0 auto;
+    height: 300px;
+    margin: 20px auto 0 auto;
     }
 }
 
@@ -690,104 +675,104 @@ ul li a:hover{
     margin-top: 50px; 
 }
 
-      .contact-greeting {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 20px;
-      }
+.contact-greeting {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
 
-      .greeting-image {
-        width: 100px;
-        height: auto;
-        margin-bottom: 10px;
-      }
+.greeting-image {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
 
-      .speech-bubble {
-        background-color: #e0f7fa;
-        color: #333;
-        border-radius: 10px;
-        padding: 10px 15px;
-        font-size: 0.9em;
-        position: relative;
-      }
+.speech-bubble {
+    background-color: #e0f7fa;
+    color: #333;
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-size: 0.9em;
+    position: relative;
+}
 
-      .speech-bubble:after {
-        content: "";
-        position: absolute;
-        bottom: -10px;
-        left: 50%;
-        transform: translateX(-50%);
-        border-width: 10px 10px 0 10px;
-        border-style: solid;
-        border-color: #e0f7fa transparent transparent transparent;
-      }
+.speech-bubble:after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 10px 10px 0 10px;
+    border-style: solid;
+    border-color: #e0f7fa transparent transparent transparent;
+}
 
 
-      .about-me {
-        padding: 40px 8%;
-        color: black;
-      }
+.about-me {
+    padding: 40px 8%;
+    color: black;
+}
 
-      .about-me-container {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 40px;
-        align-items: center;
-        justify-content: center;
-      }
+.about-me-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
 
-      .about-me-image {
-        flex: 1 1 300px; 
-        max-width: 400px;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      }
+.about-me-image {
+    flex: 1 1 300px; 
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-      .about-me-image img {
-        width: 100%;
-        height: auto;
-        border-radius: 8px;
-        display: block;
-        position: sticky;
-      }
+.about-me-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    position: sticky;
+}
 
-      .about-me-text {
-        flex: 1 1 400px; 
-        line-height: 1.7;
-      }
+.about-me-text {
+    flex: 1 1 400px; 
+    line-height: 1.7;
+}
 
-      .about-me-text h2 {
-        font-size: 2.5em;
-        margin-bottom: 20px;
-      }
+.about-me-text h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
 
-      .about-me-text h3 {
-        font-size: 1.8em;
-        margin-top: 25px;
-        margin-bottom: 10px;
-      }
+.about-me-text h3 {
+    font-size: 1.8em;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
 
-      .about-me-text p {
-        margin-bottom: 15px;
-      }
+.about-me-text p {
+    margin-bottom: 15px;
+}
 
-      .about-me-text span {
-        color: orange; 
-        font-weight: bold;
-      }
+.about-me-text span {
+    color: orange; 
+    font-weight: bold;
+}
 
-      @media (max-width: 768px) {
-        .about-me-container {
-          flex-direction: column; 
-          align-items: center;
-        }
+@media (max-width: 768px) {
+.about-me-container {
+    flex-direction: column; 
+    align-items: center;
+}
 
-        .about-me-image {
-          max-width: 80%;
-        }
+.about-me-image {
+    max-width: 80%;
+}
 
-        .about-me-text {
-          text-align: center;
-        }
-      }
+.about-me-text {
+    text-align: center;
+    }
+}
