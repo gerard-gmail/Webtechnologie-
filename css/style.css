@@ -438,20 +438,20 @@ ul li a:hover {
 .projecten {
     padding: 50px 5%;
     text-align: center;
-  }
+}
   
 .projecten h2 {
     font-size: 2.8em;
     color: black;
     margin-bottom: 40px;
-  }
+}
   
 .projecten-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
     gap: 20px;
     padding: 20px;
-  }
+}
   
 .project-item {
     background-color: #fff;
@@ -641,7 +641,6 @@ ul li a:hover {
     display: none;
 }
 
-
 .contact-map-section {
     text-align: center;
     padding: 40px 8%;
@@ -664,7 +663,6 @@ ul li a:hover {
     margin: 20px auto 0 auto;
     }
 }
-
 
 .site-footer {
     background-color: orange;
@@ -707,7 +705,6 @@ ul li a:hover {
     border-style: solid;
     border-color: #e0f7fa transparent transparent transparent;
 }
-
 
 .about-me {
     padding: 40px 8%;
